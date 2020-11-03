@@ -450,6 +450,6 @@ Thumbs.db
 
 ### AndroidStudio Patch ###
 
-!/gradle/wrapper/gradle-wrapper.jar
+!gradle-wrapper.jar
 
 # End of https://www.toptal.com/developers/gitignore/api/xcode,intellij,android,androidstudio,kotlin,java,swift
