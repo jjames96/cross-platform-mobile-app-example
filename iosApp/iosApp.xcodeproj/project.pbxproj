@@ -17,6 +17,16 @@
 		7555FFA1242A565B00829871 /* iosAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FFA0242A565B00829871 /* iosAppUITests.swift */; };
 		7555FFB2242A642300829871 /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7555FFB1242A642300829871 /* shared.framework */; };
 		7555FFB3242A642300829871 /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7555FFB1242A642300829871 /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D84509ED2551B114007B9DBF /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84509EC2551B114007B9DBF /* AuthenticationViewController.xib */; };
+		D84509EF2551B12F007B9DBF /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84509EE2551B12F007B9DBF /* AuthenticationViewController.swift */; };
+		D84509F12551B14C007B9DBF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84509F02551B14C007B9DBF /* BaseViewController.swift */; };
+		D84509F42551B3AB007B9DBF /* InjectionImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84509F32551B3AB007B9DBF /* InjectionImpl.swift */; };
+		D84509F82551B8E7007B9DBF /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D84509F62551B8D9007B9DBF /* NotoSans-Bold.ttf */; };
+		D84509F92551B8EA007B9DBF /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D84509F62551B8D9007B9DBF /* NotoSans-Bold.ttf */; };
+		D84509FA2551B8EB007B9DBF /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D84509F62551B8D9007B9DBF /* NotoSans-Bold.ttf */; };
+		D84509FB2551B8ED007B9DBF /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D84509F72551B8D9007B9DBF /* NotoSans-Regular.ttf */; };
+		D84509FC2551B8EE007B9DBF /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D84509F72551B8D9007B9DBF /* NotoSans-Regular.ttf */; };
+		D84509FD2551B8EF007B9DBF /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D84509F72551B8D9007B9DBF /* NotoSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +76,12 @@
 		7555FFA0242A565B00829871 /* iosAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppUITests.swift; sourceTree = "<group>"; };
 		7555FFA2242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7555FFB1242A642300829871 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = "../shared/build/xcode-frameworks/shared.framework"; sourceTree = "<group>"; };
+		D84509EC2551B114007B9DBF /* AuthenticationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticationViewController.xib; sourceTree = "<group>"; };
+		D84509EE2551B12F007B9DBF /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		D84509F02551B14C007B9DBF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D84509F32551B3AB007B9DBF /* InjectionImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionImpl.swift; sourceTree = "<group>"; };
+		D84509F62551B8D9007B9DBF /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Bold.ttf"; path = "../../../../../../Downloads/Noto_Sans/NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		D84509F72551B8D9007B9DBF /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Regular.ttf"; path = "../../../../../../Downloads/Noto_Sans/NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +134,9 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				D84509F52551B8A9007B9DBF /* Font */,
+				D84509F22551B39E007B9DBF /* Dependency */,
+				D84509EA2551B0EE007B9DBF /* Screen */,
 				7555FF7E242A565900829871 /* AppDelegate.swift */,
 				7555FF80242A565900829871 /* SceneDelegate.swift */,
 				7555FF82242A565900829871 /* ContentView.swift */,
@@ -161,6 +180,41 @@
 				7555FFB1242A642300829871 /* shared.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D84509EA2551B0EE007B9DBF /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				D84509EB2551B100007B9DBF /* Authentication */,
+				D84509F02551B14C007B9DBF /* BaseViewController.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		D84509EB2551B100007B9DBF /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				D84509EC2551B114007B9DBF /* AuthenticationViewController.xib */,
+				D84509EE2551B12F007B9DBF /* AuthenticationViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		D84509F22551B39E007B9DBF /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				D84509F32551B3AB007B9DBF /* InjectionImpl.swift */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
+		D84509F52551B8A9007B9DBF /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				D84509F62551B8D9007B9DBF /* NotoSans-Bold.ttf */,
+				D84509F72551B8D9007B9DBF /* NotoSans-Regular.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,9 +323,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D84509FB2551B8ED007B9DBF /* NotoSans-Regular.ttf in Resources */,
+				D84509ED2551B114007B9DBF /* AuthenticationViewController.xib in Resources */,
 				7555FF8B242A565B00829871 /* LaunchScreen.storyboard in Resources */,
 				7555FF88242A565B00829871 /* Preview Assets.xcassets in Resources */,
 				7555FF85242A565B00829871 /* Assets.xcassets in Resources */,
+				D84509F82551B8E7007B9DBF /* NotoSans-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +336,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D84509FC2551B8EE007B9DBF /* NotoSans-Regular.ttf in Resources */,
+				D84509FA2551B8EB007B9DBF /* NotoSans-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +345,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D84509FD2551B8EF007B9DBF /* NotoSans-Regular.ttf in Resources */,
+				D84509F92551B8EA007B9DBF /* NotoSans-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +377,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D84509F12551B14C007B9DBF /* BaseViewController.swift in Sources */,
+				D84509F42551B3AB007B9DBF /* InjectionImpl.swift in Sources */,
+				D84509EF2551B12F007B9DBF /* AuthenticationViewController.swift in Sources */,
 				7555FF7F242A565900829871 /* AppDelegate.swift in Sources */,
 				7555FF81242A565900829871 /* SceneDelegate.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
