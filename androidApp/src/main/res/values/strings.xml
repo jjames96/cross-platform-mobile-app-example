@@ -1,0 +1,8 @@
+<resources>
+    <!--  Authentication screen  -->
+    <string name="authentication_username_hint">Username</string>
+    <string name="authentication_password_hint">Password</string>
+    <string name="authentication_log_in_button">Log In</string>
+    <string name="authentication_create_account_button">Create account</string>
+    <string name="authentication_forgot_password_button">Forgot password?</string>
+</resources>
