@@ -10,4 +10,8 @@ abstract class BaseActivity : AppCompatActivity(), BaseView {
             .setMessage(message)
             .show()
     }
+
+    override fun closeSelf() {
+        finish()
+    }
 }
