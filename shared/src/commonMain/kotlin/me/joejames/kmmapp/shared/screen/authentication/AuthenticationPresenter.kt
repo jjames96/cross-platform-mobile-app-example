@@ -8,8 +8,9 @@ class AuthenticationPresenter : AuthenticationContract.Presenter() {
         view.showAlert("Log In button tapped")
     }
 
-    override fun createAccountButtonTapped() {
+    override fun createAccountButtonTapped(populateUsername: String, populatePassword: String) {
         view.showAlert("Register button tapped")
+        view.goToCreateAccountScreen(populateUsername, populatePassword)
     }
 
     override fun forgotPasswordButtonTapped() {

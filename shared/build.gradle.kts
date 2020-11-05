@@ -14,6 +14,9 @@ repositories {
     jcenter()
     mavenCentral()
 }
+dependencies {
+    testImplementation("io.mockk:mockk:1.10.2")
+}
 kotlin {
     android()
     ios {
@@ -29,6 +32,7 @@ kotlin {
             dependencies {
                 implementation(kotlin("test-common"))
                 implementation(kotlin("test-annotations-common"))
+                implementation("io.mockk:mockk-common:1.10.2")
             }
         }
         val androidMain by getting {

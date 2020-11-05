@@ -12,7 +12,7 @@ interface AuthenticationContract {
     abstract class Presenter : BasePresenter<View>() {
         override val name = "Authentication"
         abstract fun logInButtonTapped(username: String, password: String)
-        abstract fun createAccountButtonTapped()
+        abstract fun createAccountButtonTapped(populateUsername: String, populatePassword: String)
         abstract fun forgotPasswordButtonTapped()
         abstract fun textInputsChanged(username: String, password: String)
     }
