@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSans-Bold.ttf">
+            <string>NotoSans-Bold</string>
+        </array>
+        <array key="NotoSans-Regular.ttf">
+            <string>NotoSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthenticationViewController" customModule="iosApp" customModuleProvider="target">
+            <connections>
+                <outlet property="logInButton" destination="iz8-rO-WeY" id="ZlT-Td-m6f"/>
+                <outlet property="passwordTextField" destination="xBS-2P-kUu" id="aDv-0c-9qT"/>
+                <outlet property="usernameTextField" destination="pPT-wf-Y7f" id="ush-Ih-M1Q"/>
+                <outlet property="view" destination="iN0-l3-epB" id="kOP-qa-lb0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSb-Ix-LOK" userLabel="Navigation Bar Background">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                    <color key="backgroundColor" name="RobinsEggBlue"/>
+                    <viewLayoutGuide key="safeArea" id="txM-0d-Rev"/>
+                </view>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyR-Gk-YhU">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <color key="barTintColor" name="RobinsEggBlue"/>
+                </navigationBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMm-De-mdV" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="pPT-wf-Y7f" userLabel="Username Text Field">
+                            <rect key="frame" x="16" y="32" width="382" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="FWr-dU-Ll3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" textContentType="username"/>
+                            <connections>
+                                <action selector="authenticationInputsChanged" destination="-1" eventType="editingChanged" id="ooS-mN-KYl"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="xBS-2P-kUu" userLabel="Password Text Field">
+                            <rect key="frame" x="16" y="96" width="382" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="0Mt-T8-lVm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            <connections>
+                                <action selector="authenticationInputsChanged" destination="-1" eventType="editingChanged" id="Pon-0Q-Yff"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iz8-rO-WeY">
+                            <rect key="frame" x="16" y="160" width="382" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="HtV-N5-K06"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="18"/>
+                            <state key="normal" title="Log In">
+                                <color key="titleColor" name="Turquoise"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" name="Silver"/>
+                            </state>
+                            <connections>
+                                <action selector="logInButtonTapped" destination="-1" eventType="touchUpInside" id="TLh-Za-rVc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpe-Lb-0Sd">
+                            <rect key="frame" x="16" y="208" width="382" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="oYj-p2-cDi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="18"/>
+                            <state key="normal" title="Create account">
+                                <color key="titleColor" name="Turquoise"/>
+                            </state>
+                            <connections>
+                                <action selector="createAccountButtonTapped" destination="-1" eventType="touchUpInside" id="AnP-RF-l3W"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQt-Dc-BXa">
+                            <rect key="frame" x="16" y="272" width="382" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="4qI-3B-acR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
+                            <state key="normal" title="Forgot password?">
+                                <color key="titleColor" name="Spectra"/>
+                            </state>
+                            <connections>
+                                <action selector="forgotPasswordButtonTapped" destination="-1" eventType="touchUpInside" id="bjG-Xr-ybv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="bey-ri-33e" firstAttribute="trailing" secondItem="MQt-Dc-BXa" secondAttribute="trailing" constant="16" id="2R4-gF-dAx"/>
+                        <constraint firstItem="bey-ri-33e" firstAttribute="trailing" secondItem="xBS-2P-kUu" secondAttribute="trailing" constant="16" id="3QK-Qn-Tgj"/>
+                        <constraint firstItem="bey-ri-33e" firstAttribute="trailing" secondItem="jpe-Lb-0Sd" secondAttribute="trailing" constant="16" id="8kb-4E-Nwz"/>
+                        <constraint firstItem="pPT-wf-Y7f" firstAttribute="leading" secondItem="bey-ri-33e" secondAttribute="leading" constant="16" id="N9r-PN-1LW"/>
+                        <constraint firstItem="bey-ri-33e" firstAttribute="trailing" secondItem="iz8-rO-WeY" secondAttribute="trailing" constant="16" id="Qjh-Bt-TLn"/>
+                        <constraint firstItem="MQt-Dc-BXa" firstAttribute="top" secondItem="jpe-Lb-0Sd" secondAttribute="bottom" constant="16" id="XNz-JF-ptc"/>
+                        <constraint firstItem="MQt-Dc-BXa" firstAttribute="leading" secondItem="bey-ri-33e" secondAttribute="leading" constant="16" id="Zmv-mP-b3V"/>
+                        <constraint firstItem="iz8-rO-WeY" firstAttribute="leading" secondItem="bey-ri-33e" secondAttribute="leading" constant="16" id="Zpj-K9-doU"/>
+                        <constraint firstItem="bey-ri-33e" firstAttribute="trailing" secondItem="pPT-wf-Y7f" secondAttribute="trailing" constant="16" id="bdU-Ao-gpc"/>
+                        <constraint firstItem="iz8-rO-WeY" firstAttribute="top" secondItem="xBS-2P-kUu" secondAttribute="bottom" constant="16" id="cic-aM-rQO"/>
+                        <constraint firstItem="jpe-Lb-0Sd" firstAttribute="top" secondItem="iz8-rO-WeY" secondAttribute="bottom" id="dwp-GN-nxl"/>
+                        <constraint firstItem="pPT-wf-Y7f" firstAttribute="top" secondItem="bey-ri-33e" secondAttribute="top" constant="32" id="fWM-Kw-iS9"/>
+                        <constraint firstItem="jpe-Lb-0Sd" firstAttribute="leading" secondItem="bey-ri-33e" secondAttribute="leading" constant="16" id="pmu-La-7au"/>
+                        <constraint firstItem="xBS-2P-kUu" firstAttribute="top" secondItem="pPT-wf-Y7f" secondAttribute="bottom" constant="16" id="rjK-ZB-h5b"/>
+                        <constraint firstItem="xBS-2P-kUu" firstAttribute="leading" secondItem="bey-ri-33e" secondAttribute="leading" constant="16" id="zqw-ig-WsO"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="bey-ri-33e"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="WildSand"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uMm-De-mdV" secondAttribute="trailing" id="19b-s1-Xbt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fyR-Gk-YhU" secondAttribute="trailing" id="CTK-CS-dhE"/>
+                <constraint firstItem="fyR-Gk-YhU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="NHH-eb-JiH"/>
+                <constraint firstItem="uMm-De-mdV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="SRh-oS-7Ln"/>
+                <constraint firstItem="YSb-Ix-LOK" firstAttribute="bottom" secondItem="fyR-Gk-YhU" secondAttribute="bottom" id="XfL-N4-Uqq"/>
+                <constraint firstItem="YSb-Ix-LOK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aYT-HN-GXd"/>
+                <constraint firstAttribute="top" secondItem="YSb-Ix-LOK" secondAttribute="top" id="joh-VM-GS3"/>
+                <constraint firstAttribute="trailing" secondItem="YSb-Ix-LOK" secondAttribute="trailing" id="khS-2a-VMK"/>
+                <constraint firstItem="uMm-De-mdV" firstAttribute="top" secondItem="fyR-Gk-YhU" secondAttribute="bottom" id="kqe-Ox-XHT"/>
+                <constraint firstItem="uMm-De-mdV" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="34" id="oBS-uI-FeR"/>
+                <constraint firstItem="fyR-Gk-YhU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xnJ-c3-pCr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="RobinsEggBlue">
+            <color red="0.027450980392156862" green="0.74509803921568629" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Silver">
+            <color red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Spectra">
+            <color red="0.18431372549019609" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Turquoise">
+            <color red="0.23921568627450981" green="0.80000000000000004" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="WildSand">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
