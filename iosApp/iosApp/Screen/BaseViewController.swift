@@ -6,4 +6,13 @@ class BaseViewController : UIViewController, BaseView {
         let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         self.present(alertController, animated: true, completion: nil)
     }
+    
+    func closeSelf() {
+        navigationController?.popViewController(animated: true)
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        automaticallyAdjustsScrollViewInsets = false
+    }
 }

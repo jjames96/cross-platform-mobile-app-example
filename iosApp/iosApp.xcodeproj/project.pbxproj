@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7555FF7F242A565900829871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF7E242A565900829871 /* AppDelegate.swift */; };
-		7555FF81242A565900829871 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF80242A565900829871 /* SceneDelegate.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 		7555FF85242A565B00829871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7555FF84242A565B00829871 /* Assets.xcassets */; };
 		7555FF88242A565B00829871 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7555FF87242A565B00829871 /* Preview Assets.xcassets */; };
@@ -27,6 +26,8 @@
 		D84509FB2551B8ED007B9DBF /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D84509F72551B8D9007B9DBF /* NotoSans-Regular.ttf */; };
 		D84509FC2551B8EE007B9DBF /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D84509F72551B8D9007B9DBF /* NotoSans-Regular.ttf */; };
 		D84509FD2551B8EF007B9DBF /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D84509F72551B8D9007B9DBF /* NotoSans-Regular.ttf */; };
+		D8450A022555B479007B9DBF /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8450A012555B479007B9DBF /* CreateAccountViewController.xib */; };
+		D8450A042555B486007B9DBF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8450A032555B486007B9DBF /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +64,6 @@
 /* Begin PBXFileReference section */
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF7E242A565900829871 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7555FF80242A565900829871 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF84242A565B00829871 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7555FF87242A565B00829871 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -82,6 +82,8 @@
 		D84509F32551B3AB007B9DBF /* InjectionImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionImpl.swift; sourceTree = "<group>"; };
 		D84509F62551B8D9007B9DBF /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Bold.ttf"; path = "../../../../../../Downloads/Noto_Sans/NotoSans-Bold.ttf"; sourceTree = "<group>"; };
 		D84509F72551B8D9007B9DBF /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Regular.ttf"; path = "../../../../../../Downloads/Noto_Sans/NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		D8450A012555B479007B9DBF /* CreateAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
+		D8450A032555B486007B9DBF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +140,6 @@
 				D84509F22551B39E007B9DBF /* Dependency */,
 				D84509EA2551B0EE007B9DBF /* Screen */,
 				7555FF7E242A565900829871 /* AppDelegate.swift */,
-				7555FF80242A565900829871 /* SceneDelegate.swift */,
 				7555FF82242A565900829871 /* ContentView.swift */,
 				7555FF84242A565B00829871 /* Assets.xcassets */,
 				7555FF89242A565B00829871 /* LaunchScreen.storyboard */,
@@ -185,6 +186,7 @@
 		D84509EA2551B0EE007B9DBF /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				D8450A002555B463007B9DBF /* CreateAccount */,
 				D84509EB2551B100007B9DBF /* Authentication */,
 				D84509F02551B14C007B9DBF /* BaseViewController.swift */,
 			);
@@ -215,6 +217,15 @@
 				D84509F72551B8D9007B9DBF /* NotoSans-Regular.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		D8450A002555B463007B9DBF /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				D8450A012555B479007B9DBF /* CreateAccountViewController.xib */,
+				D8450A032555B486007B9DBF /* CreateAccountViewController.swift */,
+			);
+			path = CreateAccount;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +340,7 @@
 				7555FF88242A565B00829871 /* Preview Assets.xcassets in Resources */,
 				7555FF85242A565B00829871 /* Assets.xcassets in Resources */,
 				D84509F82551B8E7007B9DBF /* NotoSans-Bold.ttf in Resources */,
+				D8450A022555B479007B9DBF /* CreateAccountViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,11 +389,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8450A042555B486007B9DBF /* CreateAccountViewController.swift in Sources */,
 				D84509F12551B14C007B9DBF /* BaseViewController.swift in Sources */,
 				D84509F42551B3AB007B9DBF /* InjectionImpl.swift in Sources */,
 				D84509EF2551B12F007B9DBF /* AuthenticationViewController.swift in Sources */,
 				7555FF7F242A565900829871 /* AppDelegate.swift in Sources */,
-				7555FF81242A565900829871 /* SceneDelegate.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,7 +568,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.iosApp;
+				PRODUCT_BUNDLE_IDENTIFIER = me.joejames.kmmapp.iosApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -576,7 +588,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.iosApp;
+				PRODUCT_BUNDLE_IDENTIFIER = me.joejames.kmmapp.iosApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -17,9 +17,14 @@ class AuthenticationViewController : BaseViewController {
         presenter = injection.authenticationPresenter()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         presenter.takeView(view: self)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        presenter.dropView()
     }
     
     @IBAction private func logInButtonTapped() {
@@ -54,6 +59,7 @@ extension AuthenticationViewController : AuthenticationContractView {
     }
     
     func goToCreateAccountScreen(populateUsername: String, populatePassword: String) {
-        // TODO
+        let controller = navigationController
+        controller?.pushViewController(CreateAccountViewController(), animated: true)
     }
 }
