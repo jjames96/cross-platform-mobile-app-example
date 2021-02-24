@@ -39,4 +39,10 @@
         <item name="android:textColor">@color/spectra</item>
     </style>
 
+    <style name="ToolbarTitle">
+        <item name="android:fontFamily">@font/noto_sans_bold</item>
+        <item name="android:textColor">@color/wild_sand</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
 </resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.createaccount.CreateAccountActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/robins_egg_blue"
+        android:elevation="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextAppearance="@style/ToolbarTitle"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="@string/registration_toolbar_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/usernameEditText"
+                style="@style/RoundedEditTextInput"
+                android:layout_marginTop="32dp"
+                android:hint="@string/registration_username_hint"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                style="@style/RoundedEditTextInput"
+                android:layout_marginTop="16dp"
+                android:hint="@string/registration_password_hint"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/confirmPasswordEditText"
+                style="@style/RoundedEditTextInput"
+                android:layout_marginTop="16dp"
+                android:hint="@string/registration_confirm_password_hint"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/createAccountButton"
+                style="@style/PlainTextButton.Large"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:enabled="false"
+                android:text="@string/registration_create_account_button" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

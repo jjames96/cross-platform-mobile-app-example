@@ -6,6 +6,7 @@
         android:allowBackup="false"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".screen.createaccount.CreateAccountActivity" />
         <activity android:name=".screen.authentication.AuthenticationActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

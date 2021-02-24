@@ -9,6 +9,7 @@ import me.joejames.kmmapp.androidApp.R
 import me.joejames.kmmapp.androidApp.dependency.injection
 import me.joejames.kmmapp.androidApp.listener.TextChangedListener
 import me.joejames.kmmapp.androidApp.screen.BaseActivity
+import me.joejames.kmmapp.androidApp.screen.createaccount.startCreateAccountActivity
 import me.joejames.kmmapp.shared.screen.authentication.AuthenticationContract
 
 class AuthenticationActivity : BaseActivity(), AuthenticationContract.View {
@@ -40,7 +41,7 @@ class AuthenticationActivity : BaseActivity(), AuthenticationContract.View {
     }
 
     override fun goToCreateAccountScreen(populateUsername: String, populatePassword: String) {
-        // TODO
+        startCreateAccountActivity(populateUsername, populatePassword)
     }
 
     private fun setUpButtonTappedListeners() {
