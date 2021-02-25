@@ -27,21 +27,21 @@ class AuthenticationPresenterTest {
     fun alertShownWhenLogInButtonTapped() {
         presenter.logInButtonTapped("username", "password")
 
-        verify { view.showAlert("Log In button tapped") }
+        verify { view.showAlert("Log In button tapped", any(), any()) }
     }
 
     @Test
     fun alertShownWhenCreateAccountButtonTapped() {
         presenter.createAccountButtonTapped("username", "password")
 
-        verify { view.showAlert("Register button tapped") }
+        verify { view.showAlert("Register button tapped", any(), any()) }
     }
 
     @Test
     fun alertShownWhenForgotPasswordButtonTapped() {
         presenter.forgotPasswordButtonTapped()
 
-        verify { view.showAlert("Forgot password button tapped") }
+        verify { view.showAlert("Forgot password button tapped", any(), any()) }
     }
 
     @Test
