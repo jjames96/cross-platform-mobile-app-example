@@ -34,7 +34,7 @@ class CreateAccountPresenterTest {
 
         presenter.createAccountButtonTapped(accountDetails)
 
-        verify { view.showAlert("Create account button tapped") }
+        verify { view.showAlert("Create account button tapped", any(), any()) }
     }
 
     @Test
